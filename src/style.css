@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "./components/fonts.css";
+@import "./components/variables.css";
+@import "./components/quiz.css";
+@import "./components/components.css";
+@import "./components/slider.css";
+@theme {
+  /* Основные семейства шрифтов */
+  --font-sans:
+    "AnotherFont", "Inter", system-ui, sans-serif; /* Для основного текста */
+  --font-heading: "CustomFont", "Georgia", serif; /* Для заголовков */
+  --font-mono: "Roboto Mono", "JetBrains Mono", monospace; /* Для кода */
+
+  /* Дополнительные кастомные семейства */
+  --font-custom: "Montserrat", serif; /* Явное имя для CustomFont */
+  --font-another: "Roboto", sans-serif; /* Явное имя для AnotherFont */
+  --font-serif: "Georgia", "Times New Roman", serif; /* Классический serif */
+}

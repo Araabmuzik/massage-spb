@@ -1,0 +1,17 @@
+@theme {
+  /* брейкпоинты */
+  --breakpoint-xs: 34rem;
+  --breakpoint-2xl: 90rem;
+
+  /* Размеры текста */
+
+  --text-title-fz: clamp(1.75rem, 0.83rem + 2.73vw, 2.875rem);
+
+  /* переменные swiper */
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-color: #000000;
+  --swiper-pagination-bullet-inactive-color: #ccc;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+}

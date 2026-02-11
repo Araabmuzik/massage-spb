@@ -1,0 +1,24 @@
+@layer quiz {
+  .selected {
+    @apply outline-3 outline-black;
+  }
+
+  .quiz-screen {
+    @apply hidden;
+  }
+  .quiz-final-screen {
+    @apply hidden;
+  }
+  .quiz-question {
+    @apply font-custom font-bold pb-6 text-xl lg:text-3xl text-center;
+  }
+  .quiz-answers {
+    @apply grid grid-cols-2 items-stretch gap-4 font-another text-xs pb-3;
+  }
+  .answer {
+    @apply w-full cursor-pointer bg-white p-8  rounded-3xl font-another text-[16px] font-semibold transition-all hover:scale-[1.02];
+  }
+  .next-question-btn {
+    @apply bg-[#333333] mx-auto mt-3.5;
+  }
+}

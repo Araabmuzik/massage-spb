@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<title>arr-left</title>
+	<style>
+		.s0 { fill: #373c41;stroke: #373c41;stroke-width: 2 } 
+		.s1 { fill: none;stroke: #ffffff;stroke-width: 3 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m1 20c0-10.5 8.5-19 19-19 10.5 0 19 8.5 19 19 0 10.5-8.5 19-19 19-10.5 0-19-8.5-19-19z"/>
+	<path class="s1" d="m15.7 29.3l9.3-9.3-9.3-9.3"/>
+</svg>

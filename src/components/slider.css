@@ -1,0 +1,20 @@
+@theme {
+  /* Swiper переменные */
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-color: #000000;
+  --swiper-pagination-bullet-inactive-color: #cbd5e1;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+
+  /* Навигация */
+  --swiper-navigation-color: #000000;
+  --swiper-navigation-size: 24px;
+
+  /* Прогресс бар */
+  --swiper-scrollbar-bg-color: #e5e7eb;
+  --swiper-scrollbar-drag-bg-color: #000000;
+
+  /* Цвет фона слайдов (опционально) */
+  --swiper-background-color: transparent;
+}
