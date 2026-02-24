@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=01dc946f-2c5a-4b71-b570-f377977fc8f8&lang=ru_RU"></script>  -->
+  </head>
+  <body>
+    <header class="bg-[#FDFDFD]">
+      <div
+        class="main-wrapper flex items-center justify-between py-4 lg:py-5 js-header"
+      >
+        <a href="./index.html">
+          <picture class="w-fit">
+            <img src="/images/Logo.webp" class="w-30" alt="logo" />
+          </picture>
+        </a>
+        <nav class="flex flex-row items-center justify-between gap-5">
+          <div
+            class="flex flex-col items-end gap-1.5 cursor-pointer lg:hidden js-nav"
+          >
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+          </div>
+          <ul
+            class="hidden fixed top-[84px] left-0 right-0 px-5 pt-5 pb-8 bg-[#FA6403] text-white shadow-lg font-another font-medium lg:p-0 lg:bg-transparent lg:text-black lg:shadow-none lg:static lg:flex gap-x-10 js-nav-menu"
+          >
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0">
+              <a href="./index.html">На&nbsp;главную</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0 js-menu-item">
+              <a href="./index.html#quiz">Подбери свой идеальный массаж</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0">
+              <a href="./articles.html">Полезные статьи</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0 js-menu-item">
+              <a href="./index.html#views">Отзывы</a>
+            </li>
+          </ul>
+          <a
+            href="tel:+79227880824"
+            class="button hidden text-white px-4 py-2 rounded-xl lg:flex w-fit items-center gap-1.5"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
+                stroke="black"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="font-another font-medium hidden xs:block"
+              >+7(922)-788-08-24</span
+            >
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- article -->
+      <section>
+        <div class="main-wrapper py-10 xl:py-15">
+          <div class="flex flex-col gap-3 text-center lg:gap-5">
+            <h1 class="font-custom font-bold text-title-fz">Польза массажа</h1>
+            <!-- <p class="font-another">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+              asperiores.
+            </p> -->
+          </div>
+          <div class="flex flex-col gap-6 pt-10 lg:flex-row lg:items-stretch">
+            <article
+              class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
+            >
+              <img
+                src="/images/article1.jpg"
+                class="w-full max-h-[249px]"
+                alt=""
+              />
+              <div class="p-4 lg:p-6">
+                <h2 class="font-custom text-[18px] font-semibold">
+                  Массаж как перезагрузка: почему это не&nbsp;роскошь, а
+                  необходимость?
+                </h2>
+                <p
+                  class="font-another pt-2 text-[#484848] text-[14px] text-left"
+                >
+                  В&nbsp;современном мире наше тело работает на&nbsp;износ.
+                  Сидячая работа, многочасовое вождение, стресс и&nbsp;недосып
+                  заставляют мышцы постоянно находиться в&nbsp;тонусе. Это
+                  приводит к образованию мышечных блоков
+                  и&nbsp;&laquo;зажимов&raquo;, которые нарушают кровообращение
+                  и&nbsp;вызывают хроническую усталость. Массаж&nbsp;&mdash; это
+                  не&nbsp;просто приятная процедура, а&nbsp;глубокая работа
+                  с&nbsp;телом. Во время сеанса происходит механическое
+                  и&nbsp;рефлекторное воздействие на&nbsp;ткани, которое дает
+                  три ключевых эффекта: Снятие мышечного спазма. Расслабленные
+                  мышцы перестают передавливать сосуды и&nbsp;нервы, уходят боли
+                  в&nbsp;спине и&nbsp;шее. Лимфодренаж. Ускоряется движение
+                  лимфы, что помогает организму быстрее выводить токсины
+                  и&nbsp;продукты распада, накопившиеся за день. Гармонизация
+                  нервной системы. Массаж снижает уровень кортизола (гормона
+                  стресса) и&nbsp;повышает выработку серотонина. Вы&nbsp;уходите
+                  не&nbsp;только с&nbsp;легким телом,
+                  но&nbsp;и&nbsp;с&nbsp;ясной головой. Регулярный
+                  массаж&nbsp;&mdash; это инвестиция в&nbsp;свою продуктивность
+                  и здоровье на&nbsp;годы вперед.
+                </p>
+              </div>
+            </article>
+            <article
+              class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
+            >
+              <img src="/images/article2.jpg" class="w-full" alt="" />
+              <div class="p-4 lg:p-6">
+                <h2 class="font-custom text-[18px] font-semibold">
+                  Эстетика тела: как массаж помогает вернуть тонус и&nbsp;форму
+                </h2>
+                <p class="font-another pt-2 text-[#484848] text-[14px]">
+                  Когда мы&nbsp;говорим о&nbsp;красоте фигуры, первым делом
+                  вспоминаем спортзал и&nbsp;диеты. Но&nbsp;часто даже при
+                  идеальном питании и тренировках нас могут беспокоить дряблость
+                  кожи, целлюлит или отеки, которые визуально прибавляют объемы.
+                  Здесь на&nbsp;помощь приходит массаж как мощный эстетический
+                  инструмент. В&nbsp;чем секрет? Улучшение тургора кожи. Массаж
+                  усиливает приток крови к&nbsp;покровам. Клетки получают больше
+                  кислорода, ускоряется синтез коллагена и&nbsp;эластина. Кожа
+                  становится более упругой и подтянутой. Коррекция объемов.
+                  Антицеллюлитные и скульптурирующие техники массажа помогают
+                  &laquo;разбить&raquo; фиброзные капсулы жировых отложений
+                  и&nbsp;выровнять рельеф кожи. Борьба с отечностью. Мягкое,
+                  но&nbsp;интенсивное воздействие помогает
+                  &laquo;разогнать&raquo; застоявшуюся межклеточную жидкость.
+                  Уже после первого сеанса вы&nbsp;можете заметить, что контуры
+                  лица стали четче, а&nbsp;голени и&nbsp;бедра&nbsp;&mdash;
+                  стройнее. Массаж не&nbsp;заменяет спорт,
+                  но&nbsp;он&nbsp;делает видимым результат ваших стараний,
+                  возвращая телу подтянутый и&nbsp;ухоженный вид.
+                </p>
+              </div>
+            </article>
+            <article
+              class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
+            >
+              <img src="/images/article3.jpg" class="w-full" alt="" />
+              <div class="p-4 lg:p-6">
+                <h2 class="font-custom text-[18px] font-semibold">
+                  Здоровье без таблеток: массаж как метод профилактики
+                </h2>
+                <p class="font-another pt-2 text-[#484848] text-[14px]">
+                  Мы&nbsp;привыкли лечить уже возникшие болезни, забывая
+                  о&nbsp;том, что многие проблемы можно предотвратить.
+                  Массаж&nbsp;&mdash; это один из самых эффективных
+                  и&nbsp;приятных способов профилактики заболеваний
+                  опорно-двигательного аппарата и&nbsp;внутренних органов.
+                  Регулярные курсы массажа помогают решать следующие задачи
+                  на&nbsp;опережение: Профилактика остеохондроза. Укрепление
+                  мышечного корсета позволяет снять избыточную нагрузку
+                  с&nbsp;межпозвонковых дисков, предотвращая
+                  их&nbsp;преждевременный износ и&nbsp;протрузии. Укрепление
+                  иммунитета. Воздействуя на&nbsp;рефлекторные зоны
+                  и&nbsp;улучшая лимфоток, массаж повышает сопротивляемость
+                  организма вирусам и инфекциям. Особенно это актуально
+                  в&nbsp;межсезонье. Нормализация давления. Расслабление мышц
+                  шеи и&nbsp;воротниковой зоны помогает снять спазм сосудов,
+                  питающих головной мозг. Это способствует нормализации
+                  артериального давления и&nbsp;избавлению от&nbsp;головных
+                  болей напряжения. Подарите своему телу заботу до&nbsp;того,
+                  как оно начнет сигнализировать о&nbsp;проблемах болью.
+                  Массаж&nbsp;&mdash; это путь к активному долголетию
+                  и&nbsp;отличному самочувствию без лекарств.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="my-10 lg:my-15">
+        <div class="bg-[#f8f8f8]">
+          <div class="main-wrapper bg-[#f8f8f8] p-5 lg:p-8">
+            <div id="map">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A88378aa29688fab71b5b0338f00883dda2e7c5f386370091024368bd57eaadfa&amp;width=100%&amp;height=360&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+            <div class="flex items-center gap-1 justify-between pt-10">
+              <nav>
+                <ul
+                  class="font-another font-medium flex flex-col gap-y-3 text-[14px]"
+                >
+                  <li class="w-fit"><a href="./about.html">Обо мне</a></li>
+                  <li class="w-fit">
+                    <a href="./index.html#quiz"
+                      >Подбери свой идеальный массаж</a
+                    >
+                  </li>
+                  <li class="w-fit">
+                    <a href="#">Полезные статьи</a>
+                  </li>
+                  <li class="w-fit">
+                    <a href="./index.html#views">Отзывы</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="flex flex-col gap-3 items-end">
+                <picture class="w-fit">
+                  <img src="/images/Logo.webp" class="w-30" alt="logo" />
+                </picture>
+                <div class="flex flex-col items-end">
+                  <a
+                    href="tel:+79196336333"
+                    class="px-4 py-2 bg-[#FA6403] rounded-xl flex items-center gap-1.5 hover:opacity-90 transition-all w-fit"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
+                        stroke="black"
+                        style="stroke: white; stroke-opacity: 1"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span
+                      class="font-another text-white font-medium hidden xs:block"
+                      >+7(999)-999-99-99</span
+                    >
+                  </a>
+                  <address
+                    class="font-another pt-2.5 text-end text-[12px] font-regular"
+                  >
+                    Сабирова Лилия Нурлыевна<br />
+                    Email:
+                    <a href="mailto:ivan@example.com">ivan@example.com</a>
+                    <br />
+                    Телефон:
+                    <a href="tel:+79227880824">+7 (922) 788-08-24</a> <br />
+                    Санкт Петербург, Европейский проспект 15&nbsp;кв2 <br />
+                    Санкт&nbsp;&mdash; Петербург, Большая Посадская16 офис301
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

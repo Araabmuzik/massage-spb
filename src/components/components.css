@@ -7,10 +7,14 @@
   }
   /* Кнопки */
   .button {
-    @apply block cursor-pointer w-full px-8 py-3 bg-red-400 font-another font-medium text-white rounded-xl xs:w-fit xs:py-5 xs:rounded-2xl hover:opacity-80 transition-all;
+    @apply block cursor-pointer w-full px-8 py-3 bg-[#FA6403] font-another font-medium text-white rounded-xl xs:w-fit xs:py-5 xs:rounded-2xl hover:opacity-80 transition-all;
   }
 
   .swiper-button-disabled {
     @apply opacity-0 transition-opacity;
+  }
+
+  html {
+    @apply scroll-smooth;
   }
 }

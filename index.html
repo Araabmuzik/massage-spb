@@ -4,46 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
-
-    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=01dc946f-2c5a-4b71-b570-f377977fc8f8&lang=ru_RU"></script>  -->
   </head>
   <body>
-    <header>
-      <div class="main-wrapper flex items-center justify-between py-4 lg:py-5">
+    <header class="bg-[#FDFDFD]">
+      <div
+        class="main-wrapper flex items-center justify-between py-4 lg:py-5 js-header"
+      >
         <picture class="w-fit">
-          <img src="/images/Logo.webp" alt="logo" />
+          <img src="/images/Logo.webp" class="w-30" alt="logo" />
         </picture>
-        <nav>
-          <ul class="font-another font-medium hidden lg:flex gap-x-10">
-            <li>Обо мне</li>
-            <li>Квиз</li>
-            <li>Полезные материалы</li>
-            <li>Отзывы</li>
+        <nav class="flex flex-row items-center justify-between gap-5">
+          <div
+            class="flex flex-col items-end gap-1.5 cursor-pointer lg:hidden js-nav"
+          >
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+            <div
+              class="w-8 h-0.5 bg-[#FA6403] transition-all delay-150 duration-300 ease-in-out"
+            ></div>
+          </div>
+          <ul
+            class="hidden fixed top-21 left-0 right-0 px-5 pt-5 pb-8 bg-[#FA6403] text-white shadow-lg font-another font-medium lg:p-0 lg:bg-transparent lg:text-black lg:shadow-none lg:static lg:flex gap-x-10 js-nav-menu"
+          >
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0">
+              <a href="./about.html">Обо мне</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0 js-menu-item">
+              <a href="#quiz">Подбери свой идеальный массаж</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0">
+              <a href="./articles.html">Полезные статьи</a>
+            </li>
+            <li class="border-b py-2 w-fit lg:border-none lg:p-0 js-menu-item">
+              <a href="#views">Отзывы</a>
+            </li>
           </ul>
+          <a
+            href="tel:+79227880824"
+            class="button hidden text-white px-4 py-2 rounded-xl lg:flex w-fit items-center gap-1.5"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
+                stroke="black"
+                style="stroke: white; stroke-opacity: 1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="font-another font-medium hidden xs:block"
+              >+7(922)-788-08-24</span
+            >
+          </a>
         </nav>
-        <a
-          href="tel:+79196336333"
-          class="px-4 py-2 bg-[#F5F6FA] rounded-xl flex items-center gap-1.5 hover:scale-105 transition-all"
-          ><svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
-              stroke="black"
-              style="stroke: black; stroke-opacity: 1"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <span class="font-another font-medium hidden xs:block"
-            >+7(999)-999-99-99</span
-          >
-        </a>
       </div>
     </header>
 
@@ -51,36 +74,47 @@
       <!-- banner -->
       <section>
         <div
-          class="main-wrapper py-12.5 flex flex-col lg:gap-10 lg:flex-row-reverse justify-end items-center gap-16 xl:px-25"
+          class="main-wrapper py-12.5 flex flex-col-reverse lg:gap-10 lg:flex-row-reverse justify-end items-center gap-16 xl:px-25"
         >
           <div class="flex flex-col gap-7">
             <div class="flex flex-col gap-3 text-center lg:text-left lg:gap-5">
               <h1 class="font-custom font-bold text-title-fz l">
-                Lorem ipsum dolor sit amet.
+                Массаж в&nbsp;Санкт-Петербурге
               </h1>
               <p class="font-another">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-                asperiores.
+                Исцеление тела через профессиональные техники. Комплексный
+                подход к&nbsp;вашему здоровью.
               </p>
             </div>
-            <button class="button mx-auto lg:ml-0">Позвонить</button>
+            <a
+              href="tel:+79227880824"
+              class="button mx-auto lg:ml-0 text-center"
+              target="_blank"
+              >Позвонить</a
+            >
           </div>
           <picture
             ><img
               src="/images/banner.webp"
               class="rounded-[20px] w-full max-w-150 mx-auto"
-              alt=""
+              alt="Лилия Сабирова"
             />
           </picture>
         </div>
       </section>
 
       <!-- quiz -->
-      <section>
-        <div class="main-wrapper py-10 xl:py-15">
+      <section id="quiz">
+        <div class="main-wrapper py-10 xl:py-15 ]">
+          <div class="flex flex-col gap-3 text-center lg:gap-5">
+            <h1 class="font-custom font-bold text-title-fz">
+              Подберите массаж под свой запрос
+            </h1>
+            <p class="font-another">ответив на&nbsp;три простых вопроса</p>
+          </div>
           <div
             id="app"
-            class="p-5 rounded-[20px] lg:rounded-4xl lg:p-8 bg-amber-100"
+            class="p-5 rounded-[20px] lg:rounded-4xl lg:p-8 mt-10 bg-[#FDFDFD] border border-[#FA6403]"
           >
             <div class="quiz-question-number"></div>
             <!-- 1 вопрос -->
@@ -101,7 +135,9 @@
             <!-- финальный экран -->
             <div class="quiz-final-screen"></div>
             <div title="Выберете ответ">
-              <button class="button next-question-btn">Следующий вопрос</button>
+              <button class="button text-white next-question-btn">
+                Следующий вопрос
+              </button>
             </div>
           </div>
         </div>
@@ -110,30 +146,34 @@
       <section>
         <div class="main-wrapper py-10 xl:py-15">
           <div class="flex flex-col gap-3 text-center lg:gap-5">
-            <h1 class="font-custom font-bold text-title-fz l">
-              Lorem ipsum dolor sit amet.
-            </h1>
-            <p class="font-another">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              asperiores.
-            </p>
+            <h1 class="font-custom font-bold text-title-fz">Польза массажа</h1>
           </div>
           <div class="flex flex-col gap-6 pt-10 lg:flex-row lg:items-stretch">
             <article
               class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
             >
-              <img src="/images/banner.webp" class="w-full" alt="" />
+              <img
+                src="/images/article1.jpg"
+                class="w-full max-h-62.25"
+                alt="боли в шейном отделе"
+              />
               <div class="p-4 lg:p-6">
                 <h2 class="font-custom text-[18px] font-semibold">
-                  Lorem ipsum dolor sit amet.
+                  Массаж как перезагрузка: почему это не&nbsp;роскошь, а
+                  необходимость?
                 </h2>
-                <p class="font-another pt-2 text-[#484848] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Molestiae tempora temporibus sapiente quisquam, ipsam rerum
-                  nobis quis magnam aliquid ea.
+                <p
+                  class="font-another pt-2 text-[#484848] text-[14px] text-left"
+                >
+                  В&nbsp;современном мире наше тело работает на&nbsp;износ.
+                  Сидячая работа, многочасовое вождение, стресс и&nbsp;недосып
+                  заставляют мышцы постоянно находиться в&nbsp;тонусе. Это
+                  приводит к образованию мышечных блоков
+                  и&nbsp;&laquo;зажимов&raquo;, которые нарушают кровообращение
+                  и&nbsp;вызывают хроническую усталость.
                 </p>
                 <a
-                  href="#"
+                  href="./articles.html"
                   class="font-another text-[#3184FF] text-[14px] font-medium pt-3"
                   >Читать статью</a
                 >
@@ -142,23 +182,21 @@
             <article
               class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
             >
-              <img src="/images/banner.webp" class="w-full" alt="" />
+              <img src="/images/article2.jpg" class="w-full" alt="красота" />
               <div class="p-4 lg:p-6">
                 <h2 class="font-custom text-[18px] font-semibold">
-                  Lorem ipsum dolor sit amet.
+                  Эстетика тела: как массаж помогает вернуть тонус и&nbsp;форму
                 </h2>
                 <p class="font-another pt-2 text-[#484848] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Molestiae tempora temporibus sapiente quisquam, ipsam rerum
-                  nobis quis magnam aliquid ea. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Molestiae tempora temporibus
-                  sapiente quisquam, ipsam rerum nobis quis magnam aliquid
-                  ea.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Molestiae tempora temporibus sapiente quisquam, ipsam rerum
-                  nobis quis magnam aliquid ea.
+                  Когда мы&nbsp;говорим о&nbsp;красоте фигуры, первым делом
+                  вспоминаем спортзал и&nbsp;диеты. Но&nbsp;часто даже при
+                  идеальном питании и тренировках нас могут беспокоить дряблость
+                  кожи, целлюлит или отеки, которые визуально прибавляют объемы.
+                  Здесь на&nbsp;помощь приходит массаж как мощный эстетический
+                  инструмент.
                 </p>
                 <a
-                  href="#"
+                  href="./about.html"
                   class="font-another text-[#3184FF] text-[14px] font-medium pt-3"
                   >Читать статью</a
                 >
@@ -167,18 +205,24 @@
             <article
               class="rounded-[20px] overflow-hidden bg-[#F8F8F8] lg:flex-1"
             >
-              <img src="/images/banner.webp" class="w-full" alt="" />
+              <img
+                src="/images/article3.jpg"
+                class="w-full"
+                alt="профилактика"
+              />
               <div class="p-4 lg:p-6">
                 <h2 class="font-custom text-[18px] font-semibold">
-                  Lorem ipsum dolor sit amet.
+                  Здоровье без таблеток: массаж как метод профилактики
                 </h2>
                 <p class="font-another pt-2 text-[#484848] text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Molestiae tempora temporibus sapiente quisquam, ipsam rerum
-                  nobis quis magnam aliquid ea.
+                  Мы&nbsp;привыкли лечить уже возникшие болезни, забывая
+                  о&nbsp;том, что многие проблемы можно предотвратить.
+                  Массаж&nbsp;&mdash; это один из самых эффективных
+                  и&nbsp;приятных способов профилактики заболеваний
+                  опорно-двигательного аппарата и&nbsp;внутренних органов.
                 </p>
                 <a
-                  href="#"
+                  href="./articles.html"
                   class="font-another text-[#3184FF] text-[14px] font-medium pt-3 pb-1"
                   >Читать статью</a
                 >
@@ -188,16 +232,12 @@
         </div>
       </section>
       <!-- views -->
-      <section>
+      <section id="views">
         <div class="relative py-10 lg:py15 px-4">
           <div class="flex flex-col gap-3 text-center lg:gap-5 pb-10">
             <h1 class="font-custom font-bold text-title-fz l">
-              Lorem ipsum dolor sit amet.
+              Что говорят клиенты
             </h1>
-            <p class="font-another">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              asperiores.
-            </p>
           </div>
           <div class="swiper">
             <!-- Additional required wrapper -->
@@ -205,11 +245,15 @@
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="w-full rounded-xl bg-[#F8F8F8] p-8">
-                  <p class="font-another text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum harum rerum illo, dolores quidem dolorem iure omnis
-                    tenetur odit sunt repellat rem iste! Eos aliquam perferendis
-                    ut aspernatur blanditiis earum incidunt est.
+                  <p
+                    class="font-another text-[14px] font-medium pb-3 border-b border-[#cbd5e1]"
+                  >
+                    Как любитель бега, постоянно сталкиваюсь с&nbsp;крепатурой и
+                    напряжением в&nbsp;ногах. Здесь мне помогли быстро
+                    восстановиться после полумарафона. Мастер отлично проработал
+                    все мышцы, нашел все триггерные точки. Результат чувствуется
+                    сразу &mdash; легкость в&nbsp;ногах невероятная. Спасибо
+                    за&nbsp;профессионализм!
                   </p>
                   <div
                     class="flex items-center justify-end gap-2 font-another text-[12px] font-semibold pt-3"
@@ -232,19 +276,24 @@
                           "
                         />
                       </svg>
-                      <span>4.9</span>
+                      <span>5.0</span>
                     </div>
-                    <p>Morty Smith</p>
+                    <p>Денис Овечкин</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="w-full rounded-xl bg-[#F8F8F8] p-8">
-                  <p class="font-another text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum harum rerum illo, dolores quidem dolorem iure omnis
-                    tenetur odit sunt repellat rem iste! Eos aliquam perferendis
-                    ut aspernatur blanditiis earum incidunt est.
+                  <p
+                    class="font-another text-[14px] font-medium pb-3 border-b border-[#cbd5e1]"
+                  >
+                    &laquo;Хожу на&nbsp;массаж уже несколько месяцев
+                    и&nbsp;каждый раз как в первый&nbsp;&mdash; сплошное
+                    удовольствие! Руки у&nbsp;Лилии просто золотые, уходят
+                    не&nbsp;только боли в&nbsp;спине, но&nbsp;и&nbsp;стресс,
+                    накопленный за неделю. Очень рекомендую всем, кто хочет
+                    не&nbsp;просто &bdquo;помять&ldquo; мышцы,
+                    а&nbsp;качественно поработать с&nbsp;телом.&raquo;
                   </p>
                   <div
                     class="flex items-center justify-end gap-2 font-another text-[12px] font-semibold pt-3"
@@ -269,17 +318,21 @@
                       </svg>
                       <span>4.9</span>
                     </div>
-                    <p>Morty Smith</p>
+                    <p>Айгуль Агзамова</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="w-full rounded-xl bg-[#F8F8F8] p-8">
-                  <p class="font-another text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum harum rerum illo, dolores quidem dolorem iure omnis
-                    tenetur odit sunt repellat rem iste! Eos aliquam perferendis
-                    ut aspernatur blanditiis earum incidunt est.
+                  <p
+                    class="font-another text-[14px] font-medium pb-3 border-b border-[#cbd5e1]"
+                  >
+                    &laquo;Отличный специалист. Делала антицеллюлитный массаж
+                    &mdash; результат виден уже после нескольких процедур, кожа
+                    заметно подтянулась. При этом не&nbsp;больно, хотя обычно
+                    терпеть не&nbsp;могу эту процедуру. Очень приятная
+                    и&nbsp;тактичная девушка. Цены адекватные качеству.
+                    Спасибо!&raquo;
                   </p>
                   <div
                     class="flex items-center justify-end gap-2 font-another text-[12px] font-semibold pt-3"
@@ -302,19 +355,23 @@
                           "
                         />
                       </svg>
-                      <span>4.9</span>
+                      <span>5.0</span>
                     </div>
-                    <p>Morty Smith</p>
+                    <p>Анастасия Овечкина</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="w-full rounded-xl bg-[#F8F8F8] p-8">
-                  <p class="font-another text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum harum rerum illo, dolores quidem dolorem iure omnis
-                    tenetur odit sunt repellat rem iste! Eos aliquam perferendis
-                    ut aspernatur blanditiis earum incidunt est.
+                  <p
+                    class="font-another text-[14px] font-medium pb-3 border-b border-[#cbd5e1]"
+                  >
+                    &laquo;Ходил с&nbsp;сильным зажимом в&nbsp;шее, думал, уже
+                    не&nbsp;пройдет. Лилия просто волшебник! После первого
+                    сеанса стало значительно легче, а&nbsp;к&nbsp;третьему
+                    проблема ушла полностью. Очень чуткие руки, чувствуется
+                    большой опыт и&nbsp;профессионализм. Обязательно приду еще
+                    на&nbsp;профилактику.&raquo;
                   </p>
                   <div
                     class="flex items-center justify-end gap-2 font-another text-[12px] font-semibold pt-3"
@@ -337,19 +394,23 @@
                           "
                         />
                       </svg>
-                      <span>4.9</span>
+                      <span>5.0</span>
                     </div>
-                    <p>Morty Smith</p>
+                    <p>Борис Ихтонов</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="w-full rounded-xl bg-[#F8F8F8] p-8">
-                  <p class="font-another text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum harum rerum illo, dolores quidem dolorem iure omnis
-                    tenetur odit sunt repellat rem iste! Eos aliquam perferendis
-                    ut aspernatur blanditiis earum incidunt est.
+                  <p
+                    class="font-another text-[14px] font-medium pb-3 border-b border-[#cbd5e1]"
+                  >
+                    &laquo;Искала идеального массажиста несколько лет
+                    и&nbsp;наконец-то нашла! Очень тактичная и&nbsp;приятная
+                    женщина, сразу понимает, какие зоны требуют внимания без
+                    лишних слов. После сеанса чувствуешь не&nbsp;разбитость,
+                    а&nbsp;невероятную легкость и&nbsp;прилив энергии. Спасибо
+                    за&nbsp;ваш труд!&raquo;
                   </p>
                   <div
                     class="flex items-center justify-end gap-2 font-another text-[12px] font-semibold pt-3"
@@ -374,7 +435,7 @@
                       </svg>
                       <span>4.9</span>
                     </div>
-                    <p>Morty Smith</p>
+                    <p>Светлана Ивановна</p>
                   </div>
                 </div>
               </div>
@@ -384,86 +445,91 @@
             <div
               class="s-button-prev hidden lg:block absolute z-10 top-1/2 left-10 w-10 h-10"
             >
-              <img src="/images/arr-left.svg" alt="" />
+              <img src="/images/arr-left.svg" alt="кнопка влево" />
             </div>
             <div
               class="s-button-next hidden lg:block absolute z-10 top-1/2 right-10 w-10 h-10"
             >
-              <img src="/images/arr-right.svg" alt="" />
+              <img src="/images/arr-right.svg" alt="кнопка вправо" />
             </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination mt-2.5"></div>
         </div>
       </section>
-      <!-- footer -->
-      <footer>
-        <div class="my-10 lg:my-15">
-          <div class="bg-[#f8f8f8]">
-            <div class="main-wrapper bg-[#f8f8f8] p-5 lg:p-8">
-              <div id="map" class="h-100 bg-amber-300"></div>
-              <div class="flex items-center gap-1 justify-between pt-10">
-                <nav>
-                  <ul
-                    class="font-another font-medium flex flex-col gap-y-3 text-[14px]"
-                  >
-                    <li class="w-fit">Обо мне</li>
-                    <li class="w-fit">Квиз</li>
-                    <li class="w-fit">Полезные материалы</li>
-                    <li class="w-fit">Отзывы</li>
-                  </ul>
-                </nav>
-                <div class="flex flex-col gap-3 items-end">
-                  <picture class="w-fit">
-                    <img src="/images/Logo.webp" alt="logo" />
-                  </picture>
-                  <div class="flex flex-col items-end">
-                    <a
-                      href="tel:+79196336333"
-                      class="px-4 py-2 bg-[#ffc4c4] rounded-xl flex items-center gap-1.5 hover:scale-105 transition-all w-fit"
-                      ><svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
-                          stroke="black"
-                          style="stroke: black; stroke-opacity: 1"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span class="font-another font-medium hidden xs:block"
-                        >+7(999)-999-99-99</span
-                      >
-                    </a>
-                    <address
-                      class="font-another pt-2.5 text-end text-[12px] font-regular"
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="my-10 lg:my-15">
+        <div class="bg-[#FDFDFD]">
+          <div class="main-wrapper p-5 lg:p-8">
+            <div id="map" class="h-100">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A88378aa29688fab71b5b0338f00883dda2e7c5f386370091024368bd57eaadfa&amp;width=100%&amp;height=360&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+            <div class="flex items-center gap-1 justify-between pt-10">
+              <nav>
+                <ul
+                  class="font-another font-medium lg:flex gap-x-10 flex-col gap-1.5"
+                >
+                  <li><a href="./about.html">Обо мне</a></li>
+                  <li><a href="#quiz">Подбери свой идеальный массаж</a></li>
+                  <li><a href="./articles.html">Полезные статьи</a></li>
+                  <li><a href="#views">Отзывы</a></li>
+                </ul>
+              </nav>
+              <div class="flex flex-col gap-3 items-end">
+                <picture class="w-fit">
+                  <img src="/images/Logo.webp" class="w-30" alt="logo" />
+                </picture>
+                <div class="flex flex-col items-end">
+                  <a
+                    href="tel:+79196336333"
+                    class="px-4 py-2 bg-[#FA6403] rounded-xl flex items-center gap-1.5 hover:opacity-90 transition-all w-fit"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      Автор: Иван Иванов<br />
-                      Email:
-                      <a href="mailto:ivan@example.com">ivan@example.com</a
-                      ><br />
-                      Телефон:
-                      <a href="tel:+79990000000">+7 (999) 000-00-00</a><br />
-                      Адрес: ул. Примерная, д. 1
-                    </address>
-                  </div>
+                      <path
+                        d="M20.6638 18.771C20.6638 18.771 19.5052 19.909 19.2212 20.2427C18.7587 20.7363 18.2137 20.9693 17.4992 20.9693C17.4305 20.9693 17.3573 20.9693 17.2886 20.9648C15.9284 20.8779 14.6644 20.3478 13.7164 19.8953C11.1243 18.643 8.84819 16.8652 6.95678 14.612C5.3951 12.7336 4.35093 10.9969 3.6594 9.13217C3.23349 7.99415 3.07778 7.1075 3.14647 6.27113C3.19227 5.7364 3.39835 5.29308 3.77847 4.91374L5.34015 3.35526C5.56455 3.14502 5.8027 3.03076 6.03626 3.03076C6.32478 3.03076 6.55835 3.20443 6.7049 3.35069C6.70948 3.35526 6.71406 3.35983 6.71864 3.3644C6.998 3.62491 7.26362 3.89456 7.54298 4.18249C7.68495 4.32874 7.8315 4.47499 7.97805 4.62581L9.22831 5.87351C9.71376 6.35797 9.71376 6.80586 9.22831 7.29032C9.0955 7.42286 8.96727 7.5554 8.83446 7.68337C8.44976 8.07642 8.75196 7.77483 8.35353 8.13132C8.34437 8.14046 8.33521 8.14503 8.33063 8.15417C7.93677 8.54722 8.01005 8.93113 8.09248 9.19164C8.09706 9.20535 8.10164 9.21906 8.10622 9.23277C8.43138 10.0189 8.88935 10.7593 9.58547 11.6413L9.59005 11.6459C10.854 13.1998 12.1867 14.411 13.6568 15.3387C13.8446 15.4576 14.0369 15.5536 14.2201 15.645C14.385 15.7272 14.5407 15.8049 14.6735 15.8872C14.6918 15.8963 14.7101 15.91 14.7285 15.9192C14.8842 15.9969 15.0307 16.0334 15.1819 16.0334C15.562 16.0334 15.8001 15.7958 15.878 15.7181L16.7757 14.8222C16.9314 14.6668 17.1787 14.4795 17.4672 14.4795C17.7511 14.4795 17.9847 14.6577 18.1267 14.8131C18.1312 14.8177 18.1312 14.8177 18.1358 14.8222L20.6592 17.3405C21.1309 17.8067 20.6638 18.771 20.6638 18.771Z"
+                        stroke="black"
+                        style="stroke: white; stroke-opacity: 1"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span
+                      class="font-another text-white font-medium hidden xs:block"
+                      >+7(999)-999-99-99</span
+                    >
+                  </a>
+                  <address
+                    class="font-another pt-2.5 text-end text-[12px] font-regular"
+                  >
+                    Сабирова Лилия Нурлыевна<br />
+                    Email:
+                    <a href="mailto:ivan@example.com">ivan@example.com</a>
+                    <br />
+                    Телефон:
+                    <a href="tel:+79227880824">+7 (922) 788-08-24</a> <br />
+                    Санкт Петербург, Европейский проспект 15&nbsp;кв2 <br />
+                    Санкт&nbsp;&mdash; Петербург, Большая Посадская16 офис301
+                  </address>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <p class="font-another font-bold text-center py-2.5">
-          &copy; 2026 Копирайт
-        </p>
-      </footer>
-    </main>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

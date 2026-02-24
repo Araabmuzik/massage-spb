@@ -1,8 +1,4 @@
 @layer quiz {
-  .selected {
-    @apply outline-3 outline-black;
-  }
-
   .quiz-screen {
     @apply hidden;
   }
@@ -10,15 +6,18 @@
     @apply hidden;
   }
   .quiz-question {
-    @apply font-custom font-bold pb-6 text-xl lg:text-3xl text-center;
+    @apply font-custom font-bold pb-6 text-xl lg:text-3xl text-left;
   }
   .quiz-answers {
     @apply grid grid-cols-2 items-stretch gap-4 font-another text-xs pb-3;
   }
   .answer {
-    @apply w-full cursor-pointer bg-white p-8  rounded-3xl font-another text-[16px] font-semibold transition-all hover:scale-[1.02];
+    @apply w-full cursor-pointer bg-white border-[#FA6403] border p-1.5 lg:p-8 rounded-lg lg:rounded-3xl font-another text-[12px] lg:text-[16px] font-medium transition-transform hover:bg-[#F89B00];
+  }
+  .selected {
+    @apply outline-1 outline-white bg-[#F89B00]  lg:outline-3 text-white;
   }
   .next-question-btn {
-    @apply bg-[#333333] mx-auto mt-3.5;
+    @apply bg-[#FA6403] text-white mx-auto mt-3.5;
   }
 }
